@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 .container {
+  position: relative;
   width: 80%;
   margin: 0 auto;
 }
@@ -33,45 +34,122 @@
   height: 5vh;
   z-index: 999;
 }
+.button_menu {
+  position: absolute;
+  top: 25%;
+  right: 0;
+}
+.button_menu a {
+  display: inline-block;
+}
 
 /* header */
-header {
-  position: relative;
-}
 .upper_ban {
+  position: relative;
   width: 100%;
   height: 10vh;
 }
 .background_img {
   width: 100%;
   height: 60vh;
-  background-color: lightpink;
+  background-color: #fff3ee;
   background-image: url(../img/jumbotron.png);
   background-size: 75%;
   background-repeat: no-repeat;
   background-position: bottom right;
 }
+.upper_ban ul {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.upper_ban li {
+  display: inline-block;
+  list-style: none;
+}
+.banner{
+  position: relative;
+}
+.banner_text {
+  position: absolute;
+  top: 15vh;
+  left:  0;
+}
 /* interlinea grande */
 .big_hr {
-  height: 5vh;
-  background-color: lightgreen;
+  position: absolute;
+  width: 100%;
+  height: 8vh;
+  bottom: 0;
+  background-color: #93e4da;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
   border-left: none;
   border-right: none;
+  z-index: 900;
 }
 /* sezione azzurrina */
-.background_azzurr {
+.background_blue {
   background-color: lightblue;
-  height: 80vh;
 }
+.background_blue li  {
+  list-style: none;
+  margin: 5px;
+}
+.background_blue li::after {
+  content: "✔";
+  color: white;
+  padding: 3px;
+  border-radius: 50%;
+  background-color: orange;
+}
+.title_float {
+  text-align: center;
+  float: left;
+  height: 20vh;
+}
+.bal {
+  float: left;
+  width: 25%;
+  height: 40vh;
+}
+
 /* main verdastra */
-.background_green {
+.main_verdastra {
   background-color: green;
   height: 40vh;
 }
+.tab_head{
+  height: 20vh;
+}
+.riga div {
+  display: inline-block;
+  border: 1px solid white;
+  width: 25%;
+  height: 25%;
+  margin: 0 0 0 0;
+}
+/* sezione bianca */
+.float {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  height: 40vh;
+}
+
 /* footer */
-.background_footer {
+footer {
+  position: relative;
   background-color: darkblue;
   height: 50vh;
+}
+footer ul {
+  display: inline-block;
+}
+footer li {
+  list-style: none;
+}
+.last_div {
+  position: absolute;
+  bottom: 0;
 }
