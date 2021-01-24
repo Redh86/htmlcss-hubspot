@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.button {
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid orange;
+  border-radius: 3px;
+  background-color: orange;
+  padding: 5px 5px;
+}
+
+/* header */
